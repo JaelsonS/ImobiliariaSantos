@@ -1,0 +1,129 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.secao {
+    text-align: center;
+    padding: 30px;
+}
+
+.imagem {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+/* === Estilo para o cabeçalho === */
+.topo {
+    background-color: #afddfb;
+    padding: 20px;
+}
+
+.topo img {
+    width: 150px;
+}
+
+.navegacao-topo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.link {
+    color: #1d1d1d;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.link:hover {
+    border-color: #1d1d1d;
+}
+
+/* === Estilo para as seções === */
+.sobre, .servicos, .corretores, .contato {
+    padding: 30px;
+}
+
+.destaque {
+    color: #1d80c1;
+    font-weight: bold;
+}
+
+.destaque-amarelo {
+    color: #f7b500;
+}
+
+.texto-sobre, .texto-servicos, .texto-corretores, .texto-contato {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.item-servico {
+    font-size: 20px;
+    color: #fff;
+    background-color: #1d80c1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.lista-contato {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-contato {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.link-contato {
+    color: #1d80c1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* === Estilo para o rodapé === */
+.rodape {
+    background-color: #1d80c1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navegacao-topo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-sobre, .texto-servicos, .texto-corretores, .texto-contato {
+        width: 100%;
+    }
+}

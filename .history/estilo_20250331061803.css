@@ -1,0 +1,270 @@
+/* Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tahoma', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* === Estilos para todas as seções === */
+.secao {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.paragrafo {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 980px;
+}
+
+/* === Cabeçalho === */
+.cabecalho {
+    background-color: #afddfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cabecalho img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+.navegacao {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link-cabecalho {
+    color: #1d1d1d;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid #1d1d1d;
+    transition: all 0.3s ease;
+}
+
+.link-cabecalho:hover {
+    color: #1d80c1;
+    border-bottom-color: #1d80c1;
+}
+
+/* === Banner Principal === */
+.banner-principal {
+    padding-top: 0;
+    margin-top: 20px;
+}
+
+.banner-principal img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* === Destaques === */
+.destaque-azul {
+    color: #1d80c1;
+    font-weight: bold;
+}
+
+.destaque-amarelo {
+    color: #fff81b;
+    font-weight: bold;
+}
+
+/* === Sobre Nós === */
+.sobre-nos h1 {
+    color: #1d1d1d;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.sobre-nos h2 {
+    font-weight: normal;
+    color: #1c81c0;
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+}
+
+.imagem-destaque {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Nossos Serviços === */
+.nossos-servicos {
+    background-color: #1d80c1;
+    color: white;
+}
+
+.nossos-servicos h3 {
+    color: #ffffff;
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.paragrafo-servicos {
+    color: #ffffff;
+    text-align: center;
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+.lista-servicos {
+    max-width: 300px;
+    margin: 30px auto;
+    text-align: left;
+    list-style-position: inside;
+}
+
+.item-servico {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* === Equipe de Corretores === */
+.equipe-corretores h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+.link {
+    text-decoration: none;
+    color
+}
+
+/* === Fale Conosco === */
+.fale-conosco {
+    background-color: #1d80c1;
+    color: white;
+}
+
+.fale-conosco h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.paragrafo-contato {
+    color: #fff;
+    background-color: #1d1d1d;
+    padding: 15px;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.lista-contato {
+    max-width: 300px;
+    margin: 30px auto;
+    list-style: none;
+}
+
+.item-contato {
+    margin: 15px 0;
+}
+
+.link-contato {
+    background-color: #ffffff;
+    color: #1d80c1;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.link-contato:hover {
+    background-color: #f0f0f0;
+}
+
+/* === Rodapé === */
+.rodape {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.conteudo-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rodape p {
+    margin: 10px 0;
+}
+
+.redes-sociais {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociais a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: #afddfb;
+}
+
+/* === Responsividade === */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+
+    .navegacao {
+        margin: 0;
+    }
+
+    .paragrafo {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .secao {
+        padding: 60px 40px;
+    }
+
+    .paragrafo {
+        font-size: 1.2rem;
+    }
+}

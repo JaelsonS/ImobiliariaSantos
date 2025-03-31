@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+/* === Estilos globais === */
+.secao {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.paragrafo {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 28px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+/* === 1ª seção === */
+.topo {
+    background-color: #afddfb;
+    padding: 20px;
+}
+
+.topo img {
+    width: 150px;
+}
+
+.navegacao-topo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.link-topo {
+    color: #1d1d1d;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid #1d1d1d;
+}
+
+/* === 2ª seção === */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* ===  3ª seção === */
+h1 {
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: normal;
+    color: #1c81c0;
+    margin-top: 0;
+}
+
+.imagem {
+    width: 90%;
+    max-width: 450px;
+}
+
+/* === 4ª seção === */
+.servicos, .contato {
+    background-color: #1d80c1;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.paragrafo-servicos, .paragrafo-contato {
+    color: #ffffff;
+    line-height: 42px;
+    width: 90%;
+    margin: auto;
+    font-size: 22px;
+}
+
+.destaque-azul {
+    color: #1d80c1;
+}
+
+.destaque-amarelo {
+    color: #fff81b;
+}
+
+/* === 5ª seção === */
+.redes-sociais a {
+    margin: 0 10px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: auto;
+}
+
+/* === Rodapé === */
+.rodape {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .topo img {
+        width: 120px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .lista-servicos, .lista-contato {
+        padding-left: 0;
+    }
+}
